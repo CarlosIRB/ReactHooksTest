@@ -1,19 +1,14 @@
-import Effect from "./Effect";
-import CustomHook from "./CustomHook";
-import "./App.css";
+import ArrayComponent from './ArrayHook';
+import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <header>
-        <h1>Hooks en React</h1>
-        {/* <StateHook></StateHook> */}
-        {/* <State></State> */}
-        {/* <Effect></Effect> */}
-        <CustomHook></CustomHook>
-      </header>
+    <div className="app-container">
+      <ArrayComponent />
+      <ArrayComponent />
+      <ArrayComponent />
     </div>
   );
-}
+};
 
 export default App;
